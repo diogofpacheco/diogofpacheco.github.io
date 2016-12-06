@@ -1,0 +1,176 @@
+<html>
+  <head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js"><\/script>')</script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-43311454-1', 'fit.edu');
+	  ga('send', 'pageview');
+
+	</script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["motionchart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'UF');
+        data.addColumn('date', 'Ano');
+        data.addColumn('string', 'Regiao');
+        data.addColumn('number', 'Percentual Investimento Local');
+        data.addColumn('number', 'Percentual Captacao de Outros Estados');
+        data.addColumn('number', 'Total Captado');
+        data.addRows([
+			["AC", new Date (2010,0,1),"N",0,100,60000],
+			["BA", new Date (2010,0,1),"NE",12,92,19731866],
+			["DF", new Date (2010,0,1),"CO",14,65,23788665],
+			["MT", new Date (2010,0,1),"CO",63,68,1921992],
+			["AM", new Date (2010,0,1),"N",4,91,3411898],
+			["AL", new Date (2010,0,1),"NE",33,97,698555],
+			["CE", new Date (2010,0,1),"NE",72,33,16333075],
+			["AP", new Date (2010,0,1),"N",0,100,61000],
+			["GO", new Date (2010,0,1),"CO",42,69,5350966],
+			["ES", new Date (2010,0,1),"SE",12,94,13901170],
+			["PR", new Date (2010,0,1),"S",52,41,37655315],
+			["MG", new Date (2010,0,1),"SE",60,59,125932922],
+			["PI", new Date (2010,0,1),"NE",79,85,1957574],
+			["MA", new Date (2010,0,1),"NE",0,100,10206013],
+			["RR", new Date (2010,0,1),"N",0,0,0],
+			["RS", new Date (2010,0,1),"S",78,52,69173475],
+			["SP", new Date (2010,0,1),"SE",74,29,492197444],
+			["PB", new Date (2010,0,1),"NE",84,58,1484181],
+			["TO", new Date (2010,0,1),"N",0,0,0],
+			["PA", new Date (2010,0,1),"N",26,98,22526871],
+			["SE", new Date (2010,0,1),"NE",0,100,1029839],
+			["MS", new Date (2010,0,1),"CO",14,98,1524173],
+			["PE", new Date (2010,0,1),"NE",38,68,18023286],
+			["SC", new Date (2010,0,1),"S",72,36,26261658],
+			["RN", new Date (2010,0,1),"NE",33,67,1645106],
+			["RO", new Date (2010,0,1),"N",60,39,867498],
+			["RJ", new Date (2010,0,1),"SE",44,35,270618173],
+			["AC", new Date (2011,0,1),"N",0,100,90000],
+			["BA", new Date (2011,0,1),"NE",13,86,16494931],
+			["DF", new Date (2011,0,1),"CO",14,53,23397498],
+			["MT", new Date (2011,0,1),"CO",37,85,4034516],
+			["AM", new Date (2011,0,1),"N",6,74,2133152],
+			["AL", new Date (2011,0,1),"NE",1,99,1547016],
+			["CE", new Date (2011,0,1),"NE",74,36,16523774],
+			["AP", new Date (2011,0,1),"N",27,0,20000],
+			["GO", new Date (2011,0,1),"CO",75,46,8526974],
+			["ES", new Date (2011,0,1),"SE",23,80,5899519],
+			["PR", new Date (2011,0,1),"S",43,37,47010887],
+			["MG", new Date (2011,0,1),"SE",70,58,127701435],
+			["PI", new Date (2011,0,1),"NE",92,79,3008677],
+			["MA", new Date (2011,0,1),"NE",41,96,4257025],
+			["RR", new Date (2011,0,1),"N",0,0,0],
+			["RS", new Date (2011,0,1),"S",74,48,72570433],
+			["SP", new Date (2011,0,1),"SE",71,30,571896162],
+			["PB", new Date (2011,0,1),"NE",61,36,1406920],
+			["TO", new Date (2011,0,1),"N",0,100,74378],
+			["PA", new Date (2011,0,1),"N",13,95,5689654],
+			["SE", new Date (2011,0,1),"NE",0,100,663986],
+			["MS", new Date (2011,0,1),"CO",68,77,2447713],
+			["PE", new Date (2011,0,1),"NE",33,79,23600329],
+			["SC", new Date (2011,0,1),"S",69,39,31743822],
+			["RN", new Date (2011,0,1),"NE",22,81,1734862],
+			["RO", new Date (2011,0,1),"N",44,30,500000],
+			["RJ", new Date (2011,0,1),"SE",50,42,351381796],
+			["AC", new Date (2012,0,1),"N",8,49,304374],
+			["BA", new Date (2012,0,1),"NE",12,85,12878225],
+			["DF", new Date (2012,0,1),"CO",10,49,15870764],
+			["MT", new Date (2012,0,1),"CO",37,52,2119145],
+			["AM", new Date (2012,0,1),"N",8,80,1451747],
+			["AL", new Date (2012,0,1),"NE",0,100,1178000],
+			["CE", new Date (2012,0,1),"NE",73,35,14135272],
+			["AP", new Date (2012,0,1),"N",0,100,90000],
+			["GO", new Date (2012,0,1),"CO",61,61,7828142],
+			["ES", new Date (2012,0,1),"SE",43,75,7122045],
+			["PR", new Date (2012,0,1),"S",38,30,49081657],
+			["MG", new Date (2012,0,1),"SE",71,56,127183070],
+			["PI", new Date (2012,0,1),"NE",79,72,2450719],
+			["MA", new Date (2012,0,1),"NE",7,99,1647128],
+			["RR", new Date (2012,0,1),"N",0,100,110000],
+			["RS", new Date (2012,0,1),"S",58,50,65067020],
+			["SP", new Date (2012,0,1),"SE",70,30,563675086],
+			["PB", new Date (2012,0,1),"NE",83,83,734570],
+			["TO", new Date (2012,0,1),"N",0,100,366972],
+			["PA", new Date (2012,0,1),"N",7,98,5869758],
+			["SE", new Date (2012,0,1),"NE",69,55,1081276],
+			["MS", new Date (2012,0,1),"CO",60,78,2737417],
+			["PE", new Date (2012,0,1),"NE",33,74,18235153],
+			["SC", new Date (2012,0,1),"S",77,35,37117516],
+			["RN", new Date (2012,0,1),"NE",33,84,3834778],
+			["RO", new Date (2012,0,1),"N",54,45,1000000],
+			["RJ", new Date (2012,0,1),"SE",52,48,333834784],
+			["AC", new Date (2013,0,1),"N",5,0,43931],
+			["BA", new Date (2013,0,1),"NE",10,91,12126782],
+			["DF", new Date (2013,0,1),"CO",8,42,11981470],
+			["MT", new Date (2013,0,1),"CO",36,48,2368976],
+			["AM", new Date (2013,0,1),"N",12,79,2947974],
+			["AL", new Date (2013,0,1),"NE",0,100,731050],
+			["CE", new Date (2013,0,1),"NE",59,31,11566165],
+			["AP", new Date (2013,0,1),"N",0,0,0],
+			["GO", new Date (2013,0,1),"CO",31,73,5325562],
+			["ES", new Date (2013,0,1),"SE",47,69,7168279],
+			["PR", new Date (2013,0,1),"S",48,33,53398838],
+			["MG", new Date (2013,0,1),"SE",56,54,128390106],
+			["PI", new Date (2013,0,1),"NE",90,34,1628112],
+			["MA", new Date (2013,0,1),"NE",0,100,802488],
+			["RR", new Date (2013,0,1),"N",0,100,4500],
+			["RS", new Date (2013,0,1),"S",65,51,80614509],
+			["SP", new Date (2013,0,1),"SE",68,31,573665819],
+			["PB", new Date (2013,0,1),"NE",8,85,462500],
+			["TO", new Date (2013,0,1),"N",52,83,497986],
+			["PA", new Date (2013,0,1),"N",58,37,2073342],
+			["SE", new Date (2013,0,1),"NE",50,31,526715],
+			["MS", new Date (2013,0,1),"CO",24,44,337819],
+			["PE", new Date (2013,0,1),"NE",20,88,16242279],
+			["SC", new Date (2013,0,1),"S",67,26,35413694],
+			["RN", new Date (2013,0,1),"NE",25,94,8803190],
+			["RO", new Date (2013,0,1),"N",51,52,1280807],
+			["RJ", new Date (2013,0,1),"SE",51,54,303100693],
+			["AC", new Date (2014,0,1),"N",0,0,0],
+			["BA", new Date (2014,0,1),"NE",18,92,18301498],
+			["DF", new Date (2014,0,1),"CO",8,38,15379334],
+			["MT", new Date (2014,0,1),"CO",24,47,1353449],
+			["AM", new Date (2014,0,1),"N",13,51,2308509],
+			["AL", new Date (2014,0,1),"NE",0,100,30000],
+			["CE", new Date (2014,0,1),"NE",62,28,14846607],
+			["AP", new Date (2014,0,1),"N",0,0,0],
+			["GO", new Date (2014,0,1),"CO",29,78,4135319],
+			["ES", new Date (2014,0,1),"SE",65,44,10515197],
+			["PR", new Date (2014,0,1),"S",65,22,57570328],
+			["MG", new Date (2014,0,1),"SE",58,57,136241600],
+			["PI", new Date (2014,0,1),"NE",53,51,1303846],
+			["MA", new Date (2014,0,1),"NE",0,100,4831523],
+			["RR", new Date (2014,0,1),"N",0,0,0],
+			["RS", new Date (2014,0,1),"S",67,50,80807771],
+			["SP", new Date (2014,0,1),"SE",67,35,567101083],
+			["PB", new Date (2014,0,1),"NE",0,100,962817],
+			["TO", new Date (2014,0,1),"N",0,0,0],
+			["PA", new Date (2014,0,1),"N",35,81,6382581],
+			["SE", new Date (2014,0,1),"NE",80,16,863800],
+			["MS", new Date (2014,0,1),"CO",0,98,1621575],
+			["PE", new Date (2014,0,1),"NE",28,81,22386514],
+			["SC", new Date (2014,0,1),"S",71,28,36234018],
+			["RN", new Date (2014,0,1),"NE",50,77,6956808],
+			["RO", new Date (2014,0,1),"N",67,46,1240365],
+			["RJ", new Date (2014,0,1),"SE",48,51,342720917]
+        ]);
+
+        var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+
+        chart.draw(data, {width: 1040, height:720});
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 1040px; height: 720px;"></div>
+  </body>
+</html>
