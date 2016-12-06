@@ -688,6 +688,12 @@ section#contact aside .social li.delicious a {
 section#contact aside .social li.flickr a {
     background: url(../images/social/flickr.png) no-repeat left 11px;
 }
+section#contact aside .social li.gscholar a {
+    background: url(../images/social/gscholar.png) no-repeat left 11px;
+}
+section#contact aside .social li.researchgate a {
+    background: url(../images/social/researchgate.png) no-repeat left 11px;
+}
 
 /* ----------------------------------------------------
     Footer
