@@ -43,30 +43,34 @@
         .link-section {
             display: flex;
             align-items: flex-start; /* Align items to the top */
-            justify-content: space-around; /* Adjust spacing */
+            justify-content: space-between; /* Space between elements */
             flex-wrap: wrap; /* Wrap content on smaller screens */
         }
-        .link {
-            flex: 1; /* Allow QR code section to take up 1/4 of the space */
+        .link, .feedback {
+            flex: 1; /* Allow QR code sections to take up 25% of the space each */
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-right: 20px;
+            margin: 10px;
         }
-        .link a {
+        .link img, .feedback img {
+            max-width: 150px; /* Max width for QR code images */
+        }
+        .link a, .feedback a {
             margin-top: 10px;
             text-decoration: none;
             color: #007BFF;
         }
-        .link a:hover {
+        .link a:hover, .feedback a:hover {
             text-decoration: underline;
         }
         .details {
-            flex: 3; /* Allow description text to take up 3/4 of the space */
+            flex: 2; /* Allow description text to take up 50% of the space */
             font-size: 1em;
             color: white;
             text-align: left;
-            max-width: 900px; /* Max width */
+            max-width: 600px; /* Max width */
+            margin: 10px;
         }
         .logo img {
             width: 150px;
@@ -77,7 +81,7 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .link, .details {
+            .link, .details, .feedback {
                 margin-bottom: 20px;
                 width: 100%; /* Full width on small screens */
             }
@@ -104,6 +108,10 @@
                 <div class="logo">
                     <img src="https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/uoe-logo.svg" alt="University of Exeter Logo">
                 </div>
+            </div>
+            <div class="feedback">
+                <img src="https://github.com/diogofpacheco/diogofpacheco.github.io/blob/master/teaching/ltn/ltn-qr-code.png?raw=true" alt="QR Code for Feedback">
+                <a href="https://twitter.com/" target="_blank">Share your thoughts on X</a>
             </div>
         </div>
     </div>
