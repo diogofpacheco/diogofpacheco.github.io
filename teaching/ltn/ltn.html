@@ -12,16 +12,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: white; /* Page background color */
+            background-color: #003c3c; /* University of Exeter green */
+            color: white; /* White text color */
             box-sizing: border-box;
         }
         .container {
             text-align: center;
             padding: 20px;
-            background: #003c3c; /* University of Exeter green */
-            color: white; /* White text color */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             width: 90%; /* Increased width */
@@ -31,6 +28,15 @@
         h1 {
             margin-bottom: 20px;
             font-size: 2em; /* Larger font size */
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 150px;
+            margin-right: 10px;
         }
         .video {
             margin-bottom: 20px;
@@ -67,14 +73,9 @@
         .details {
             flex: 2; /* Allow description text to take up 50% of the space */
             font-size: 1em;
-            color: white;
             text-align: left;
             max-width: 600px; /* Max width */
             margin: 10px;
-        }
-        .logo img {
-            width: 150px;
-            margin-top: 20px;
         }
         @media (max-width: 768px) {
             .link-section {
@@ -93,7 +94,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Low-Traffic Neighborhood (LTN) Simulator</h1>
+        <div class="logo">
+            <img src="https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/uoe-logo.svg" alt="University of Exeter Logo">
+            <h1>Low-Traffic Neighborhood (LTN) Simulator</h1>
+        </div>
         <div class="video">
             <iframe src="https://www.youtube.com/embed/-jr7uhcYb6s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -104,10 +108,7 @@
             </div>
             <div class="details">
                 <p>This video shows a simulation tool that allows you to analyse different setups for Low Traffic Neighbourhoods (LTNs). You can see how different LTN designs affect things like pollution levels, travel distances, and other measures of quality of life in the area. Watch the creation of Low Traffic Neighbourhood designs and see which ones you think are better.</p>
-                <p>Developed by: Tomas Muniagurria, Zdenek Plesek, Scott Deverinne, Ahmad Hussain, Ted Proctor, Oscar Rilot, and Diogo Pacheco.</p>
-                <div class="logo">
-                    <img src="https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/uoe-logo.svg" alt="University of Exeter Logo">
-                </div>
+                <p>Developed by: Scott Deverinne, Ahmad Hussain, Zdenek Plesek, Tomas Muniagurria, Ted Proctor, Oscar Rilot, and Diogo Pacheco.</p>
             </div>
             <div class="feedback">
                 <img src="https://github.com/diogofpacheco/diogofpacheco.github.io/blob/master/teaching/ltn/ltn-qr-code.png?raw=true" alt="QR Code for Feedback">
