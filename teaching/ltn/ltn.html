@@ -15,6 +15,7 @@
             background-color: #003c3c; /* University of Exeter green */
             color: white; /* White text color */
             box-sizing: border-box;
+            position: relative;
         }
         .container {
             text-align: center;
@@ -35,6 +36,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            justify-content: center;
         }
         .logo img {
             width: 150px;
@@ -98,6 +100,30 @@
                 height: 50vh; /* Adjusted for smaller screens */
             }
         }
+        .button-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .circle-button {
+            background: #AF1615;
+	     color: #ffffff;
+    text-align: center;
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.2s; /* Animation for movement */
+        }
+        .circle-button:hover {
+            transform: translateY(-5px); /* Move up on hover */
+        }
     </style>
 </head>
     <!-- Google tag (gtag.js) -->
@@ -109,7 +135,15 @@
 
   gtag('config', 'G-CEBQZB8TLK');
 </script>
+
 <body>
+    <div class="button-container">
+        <a href="https://federicobotta.github.io/are-we-there-yet/">
+            <button class="circle-button">
+                Back
+            </button>
+        </a>
+    </div>
     <div class="container">
         <div class="logo">
             <img src="https://www.exeter.ac.uk/v8media/recruitmentsites/images/homepage/uoe-logo.svg" alt="University of Exeter Logo">
